@@ -52,3 +52,14 @@ The goal of this project is to learn about static variables and improving your m
 ## 📌 Useful Links
 
 * [ge_next_line **Requirements**](https://leeters.netlify.app/get-next-line/)
+## :computer: Technologies
+
+* [C](https://devdocs.io/)
+* [Makefile](https://www.gnu.org/software/make/manual/make.html)
+* [Shell](https://unixguide.readthedocs.io/en/latest/unixcheatsheet/)
+* [gcc](https://terminaldeinformacao.com/2015/10/08/como-instalar-e-configurar-o-gcc-no-windows-mingw/)
+
+ ## Autor
+
+Made by Hicham Amaarour👋 [See my linkedin](https://www.linkedin.com/in/hicham-amaarour-5a1b84220/)
+
