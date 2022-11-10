@@ -52,12 +52,18 @@ The goal of this project is to learn about static variables and improving your m
 ## 📌 Useful Links
 
 * [ge_next_line **Requirements**](https://leeters.netlify.app/get-next-line/)
+* [understanding get_next_line (english subtitles)](https://www.youtube.com/watch?v=-Mt2FdJjVno)
+* [static keyword in c](https://www.c-programming-simple-steps.com/static-keyword-in-c.html)
+* [1-read() function](ibm.com/docs/en/zos/2.1.0?topic=functions-read-read-from-file-socket)
+* [2-read() function](https://linuxhint.com/posix-read-functioning-in-c-programming/)
+
 ## :computer: Technologies
 
 * [C](https://devdocs.io/)
 * [Makefile](https://www.gnu.org/software/make/manual/make.html)
 * [Shell](https://unixguide.readthedocs.io/en/latest/unixcheatsheet/)
 * [gcc](https://terminaldeinformacao.com/2015/10/08/como-instalar-e-configurar-o-gcc-no-windows-mingw/)
+
 
  ## Autor
 
