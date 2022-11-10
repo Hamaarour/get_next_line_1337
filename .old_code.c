@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   .old_code.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:30:16 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/10 18:43:27 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/10 11:23:39 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ss(int fd, char *buffer, int bytes, char *tmp)
+char	*ft_read(int fd, char **string)
 {
+	char	*buffer;
+	int		bytes;
+	char	*tmp;
+
+	//tmp = 0;
+	buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
+	if (!buffer)
+		return (NULL);
+	// bytes = 1;
+	// buffer[0] = 0;
+	//tmp = ft_strjoin(string, buffer);
 	while (!ft_strchr(tmp, '\n') && bytes != 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
@@ -22,23 +33,6 @@ char	*ss(int fd, char *buffer, int bytes, char *tmp)
 		buffer[bytes] = '\0';
 		tmp = ft_strjoin(&tmp, buffer);
 	}
-	return (tmp);
-}
-
-char	*ft_read(int fd, char **string)
-{
-	char	*buffer;
-	int		bytes;
-	char	*tmp;
-
-	tmp = 0;
-	buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
-	if (!buffer)
-		return (NULL);
-	bytes = 1;
-	buffer[0] = 0;
-	tmp = ft_strjoin(string, buffer);
-	tmp = ss(fd, buffer, bytes, tmp);
 	free(buffer);
 	if (bytes == -1)
 	{
@@ -96,30 +90,30 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-// int	main(void)
-// {
-// 	char	*line;
-// 	int		fd1;
+int	main(void)
+{
+	char	*line;
+	int		fd1;
 
-// 	//system("leaks a.out");
-// 	fd1 = open("tests/test2.txt", O_RDONLY, 0777);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	return (0);
-// }
+	system("leaks a.out");
+	fd1 = open("tests/test2.txt", O_RDONLY, 0777);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	line = get_next_line(fd1);
+	printf("%s", line);
+	free(line);
+	return (0);
+}

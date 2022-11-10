@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:29:01 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/09 20:16:33 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/10 18:48:16 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlen(const char *str);
 char	*get_next_line(int fd);
 char	*get_line_ss(char **left_str, char *str);
+char	*ss(int fd, char *buffer, int bytes, char *tmp);
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 10

@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:30:22 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/09 19:45:10 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/10 11:26:25 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,5 +110,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-//nbugidjig
