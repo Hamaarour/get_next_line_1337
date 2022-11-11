@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:30:16 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/10 18:43:27 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/11 09:57:14 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ char	*get_line_ss(char **string, char *str)
 	while (++j < i)
 		buff[j] = str[j];
 	buff[j] = '\0';
-	if (str[i])
+	if (str[i] != '\0')
 		*string = ft_substr(str, i, ft_strlen(str));
 	free(str);
 	return (buff);
@@ -96,30 +96,22 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
+
 // int	main(void)
 // {
 // 	char	*line;
 // 	int		fd1;
 
-// 	//system("leaks a.out");
 // 	fd1 = open("tests/test2.txt", O_RDONLY, 0777);
 // 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
+// 	printf("%s", line);free(line);
+// 	line = get_next_line(fd1);
+// 	printf("%s", line);free(line);
+// 	line = get_next_line(fd1);
+// 	printf("%s", line);free(line);
 // 	line = get_next_line(fd1);
 // 	printf("%s", line);
 // 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
-// 	line = get_next_line(fd1);
-// 	printf("%s", line);
-// 	free(line);
+// 	system("leaks a.out");
 // 	return (0);
 // }
