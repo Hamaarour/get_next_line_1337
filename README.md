@@ -56,6 +56,8 @@ The goal of this project is to learn about static variables and improving your m
 * [static keyword in c](https://www.c-programming-simple-steps.com/static-keyword-in-c.html)
 * [1-read() function](ibm.com/docs/en/zos/2.1.0?topic=functions-read-read-from-file-socket)
 * [2-read() function](https://linuxhint.com/posix-read-functioning-in-c-programming/)
+* [call by value and call by reference](https://www.scaler.com/topics/c/call-by-value-and-call-by-reference-in-c/)
+
 
 ## :computer: Technologies
 
