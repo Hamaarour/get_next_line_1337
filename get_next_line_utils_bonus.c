@@ -6,25 +6,23 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 18:52:24 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/10 20:23:45 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/11 10:36:18 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-char	*ft_strchr(char *s, int c)
+int	ft_strchr(char *s)
 {
 	int	i;
 
 	i = 0;
 	if (!s)
 		return (0);
-	if (c == '\0')
-		return ((char *)&s[ft_strlen(s)]);
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		if (s[i] == '\n')
+			return (1);
 		i++;
 	}
 	return (0);

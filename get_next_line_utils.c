@@ -6,25 +6,23 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:30:22 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/11 10:00:30 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:43:36 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_strchr(char *s, int c)
+int	ft_strchr(char *s)
 {
 	int	i;
 
 	i = 0;
 	if (!s)
 		return (0);
-	if (c == '\0')
-		return ((char *)&s[ft_strlen(s)]);
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		if (s[i] == '\n')
+			return (1);
 		i++;
 	}
 	return (0);
@@ -84,8 +82,6 @@ char	*ft_strjoin(char **s, char *buff)
 		*s = (char *)malloc(1 * sizeof(char));
 		(*s)[0] = '\0';
 	}
-	if (!buff)
-		return (NULL);
 	str = malloc(sizeof(char) * ((ft_strlen(*s) + ft_strlen(buff)) + 1));
 	if (str == NULL)
 		return (NULL);
