@@ -1,3 +1,4 @@
+![Cover](https://github.com/Hamaarour/get_next_line_1337/blob/main/get_next_line_cover.png)
 <h1 align="center">
 	42cursus' Get_next_line
 </h1>
